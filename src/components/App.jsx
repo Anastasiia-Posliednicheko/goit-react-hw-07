@@ -7,6 +7,8 @@ import ContactList from "./ContactList";
 import ContactForm from "./ContactForm";
 import SearchBox from "./SearchBox";
 
+import css from "./App.module.css";
+
 
 
 export default function App() {
@@ -17,11 +19,17 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    <div>
-      <h1>Phonebook</h1>
-      <ContactForm />
-      <SearchBox  />
-      <ContactList />
+    <div className={css.wraper}>
+      <h1 className={css.title} >Phonebook</h1>
+      <div className={css.container}>
+        <div className={css.left}>
+          <ContactForm />
+          <SearchBox  />
+        </div>
+        <div className={css.right}>
+          <ContactList />
+        </div>
+      </div>
     </div>
   );
 }

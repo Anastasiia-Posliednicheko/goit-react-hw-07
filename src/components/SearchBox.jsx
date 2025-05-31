@@ -17,7 +17,8 @@ export default function SearchBox(){
              id="search"
              type="text"
              value={filter}
-             onChange={handleChange}/>
+             onChange={handleChange}
+             className={css.input} />
       </div>
    );
   }
