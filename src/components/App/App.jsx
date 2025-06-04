@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import {fetchContacts} from "../redux/contactsOps";
+import {fetchContacts} from "../../redux/contactsOps";
 
 
-import ContactList from "./ContactList";
-import ContactForm from "./ContactForm";
-import SearchBox from "./SearchBox";
+import ContactList from "../ContactList/ContactList";
+import ContactForm from "../ContactForm";
+import SearchBox from "../SearchBox";
 
 import css from "./App.module.css";
 
